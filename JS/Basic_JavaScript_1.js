@@ -18,5 +18,10 @@ document.write(4*3);
 
 var string = ' There once '; 
 var value = string.concat('was ',' a ','man',' from ',' Nantucket '); 
-document.write(value);	 
+document.write(value);
+
+function displaydate(){
+   document.getElementById
+}
+
 
