@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>jQuery Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+  
+	<div>	
+        <h1>jQuery Demo</h1>
+
+        <div>
+            
+            <button onclick="function_2()" id="button">
+                  Change Background color Example
+            </button>
+    </div>
+    <br>
+    <br>
+            <h2>EXAMPLE TEXT (will fade out...)</h2>
+            <button onclick="function_3()" id="button">
+                click here
+          </button>
+    
+        <script>
+        $(document).ready(function(){
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id= 'inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id ='1'>Paragraph 1</p>\
+                        <p id ='2'>Paragraph 2</p>\
+                        <p id ='3'>Paragraph 3</p>\
+                  </div>\
+                </div>\
+            </body>"
+            );
+            $("#2").css({"color":"red"});
+            $("#3").click(function(){
+                $('h1').hide();
+            })
+        });
+        //Onclick Demo
+        function function_2(){
+            $("html").css({"background-color":"lightblue"});
+        }
+        //Event Demo
+        function function_3(){
+            $("h2").hide (1000)
+        }
+
+        
+
+        </script>
+
+</html>
+	
+	
+	
+	
+	
